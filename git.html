@@ -75,12 +75,9 @@ if (bundle.resourceType === "Bundle") {
   for (let i = 0; i < entryCount; i++) {
    // const entry = bundle.entry[i]; 
     thisResource =bundle.entry[i].resource;
-    id= thisResource.id;
+
     name =  thisResource.subject.reference;
     var name2 =  thisResource.valueQuantity.value;
-
-    output +=  id;
-    output += ',';
     output +=  name;
     output += ',';
     output +=  name2;
